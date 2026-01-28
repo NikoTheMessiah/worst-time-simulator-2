@@ -2,10 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>WTS Wiki</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <link rel="stylesheet" href="Assets/CSS/Style_Index.css">
+    <link rel="icon" type="image/png" href="favicon.ico" sizes="32x32" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
-<body style="background-image: url(Assets/Background-Images/WorstTime.gif);">
+<body>
+    <div class="static"></div>
+    <div class="top_section">
+            <img src="Assets/Misc/Site Title.png" alt="SITE TITLE">
+    </div>
+    <p>Welcome to the Worst Time Simulator 2's<br>Official Wiki/Manual!</p>
+    <br>
+    <p class="MenuButtons" style="font-size:1.5vw;">&lt; |
+        <a>&lt;How to Setup?&gt;<audio src="Assets/Sounds/Select.mp3" id="beep"></audio></a> |
     
+        <a>&lt;Attack Functions&gt;</a> |&gt;
+    </p>
+
+<script>
+
+$(".MenuButtons a").each(function(i) {
+            if (i != 0) {
+            $("#beep")
+                .clone()
+                .attr("id", "beep" + i)
+                .appendTo($(this));
+            }
+            $(this).data("beeper", i);
+        })
+
+        .mouseenter(function() {
+            var Audio = $("#beep" + $(this).data("beeper"))[0]
+            Audio.volume = 0.1
+            Audio.play()
+        });
+        $("#beep").attr("id", "beep0");
+
+</script>
+
 </body>
 </html>
