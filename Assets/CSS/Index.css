@@ -1,0 +1,10 @@
+
+body {
+    background-image: url(../Assets/Background-Images/WorstTime.gif);
+}
+
+.static {
+    background-image:url(../Assets/Background-Images/static.gif);
+    opacity: 0.15;
+    display: block;
+}
