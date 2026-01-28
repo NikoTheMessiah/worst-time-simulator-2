@@ -6,7 +6,7 @@
 html {
     height: 100%;
     margin: 0 auto;
-    font-size:1.75vw;
+    font-size:3vh;
 }
 
 body {
@@ -47,7 +47,8 @@ body {
 
 p {
     text-align: center;
-    margin-top: 0.5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 a:hover {
