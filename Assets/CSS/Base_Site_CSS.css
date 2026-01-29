@@ -1,0 +1,31 @@
+@font-face {
+  font-family: DefaultFont; /* set name */
+  src: url(../Fonts/PixelMPlus12.ttf); /* url of the font */
+}
+
+html {
+    height: 100%;
+    margin: 0 auto;
+    font-size:3vh;
+}
+
+body {
+    background-image: url(../Background-Images/WorstTime2.gif);
+    margin: 0;
+    height: 100%;
+    font-family: DefaultFont;
+    color: white;
+    
+}
+
+.static {
+    background-image:url(../Background-Images/static.gif);
+    opacity: 0.125;
+    display: block;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
