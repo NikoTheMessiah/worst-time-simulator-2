@@ -55,6 +55,14 @@
 
 </script>
 
+<?php 
+$path = '/HowToSetupWTS';
+$files = scandir($path);
+
+echo $files;
+
+
+?>
 
 
 </body>
