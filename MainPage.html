@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WTS Wiki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/CSS/Base_Site_CSS.css">
+    <link rel="stylesheet" href="Assets/CSS/Documentation_CSS.css">
+    <link rel="icon" type="image/png" href="favicon.ico" sizes="32x32" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="static"></div>
+    
+    <div class="Holder">
+        <div class="left">
+            <div class="top-left">
+                Engine API reference
+            </div>
+            <div class="bot-left">
+                <ul>
+                    <li>How to Setup WTS<audio src="Assets/Sounds/Select.mp3" id="beep"></audio></li>
+                    <li id="menu_functions">Functions</li>
+                    <ul class="menu_functions" style="display: none;">
+                        <ol data-include="Test.html">test <audio src="Assets/Sounds/Select.mp3" id="beep_"></audio></ol>
+                        <ol>test</ol>
+                        <ol>test</ol>
+                    </ul>
+                    <li>Exporting Attacks</li>
+                </ul>
+
+            </div>
+
+        </div>
+        
+
+        <div class="right">
+            <div class="top">
+                <p id="Title">* Page Title Thing</p>
+                <img src="Assets/Misc/Site Title.png" alt="SITE TITLE">
+            </div>
+            <div class="bottom">DIV 3</div>
+        </div>
+    </div>
+
+<script>
+
+$('#menu_functions').click(function() {
+    $('.menu_functions').toggle();
+});
+$(function () {
+  var includes = $('[data-include]')
+  $.each(includes, function () {
+    var file = window.location.hostname + "/Docs/" + $(this).data('include');
+    $(this).load(file);
+  })
+})
+
+$(".bot-left ul li").each(function(i) {
+        if (i != 0) {
+            $("#beep")
+            .clone()
+            .attr("id", "beep" + i)
+            .appendTo($(this));
+        }
+        $(this).data("beeper", i);
+})
+.mouseenter(function() {
+        var Audio = $("#beep" + $(this).data("beeper"))[0]
+        Audio.volume = 0.1
+        Audio.play()        
+});
+
+$(".menu_functions ol").each(function(i) {
+        if (i != 0) {
+            $("#beep_")
+            .clone()
+            .attr("id", "beep_" + i)
+            .appendTo($(this));
+
+        }
+        $(this).data("beeper_", i);
+})
+.mouseenter(function() {
+        var Audio = $("#beep_" + $(this).data("beeper_"))[0]
+        Audio.volume = 0.1
+        Audio.play()        
+});
+
+
+        
+$("#beep").attr("id", "beep0");
+$("#beep_").attr("id", "beep_0");
+
+
+</script>
+
+
+</body>
+</html>

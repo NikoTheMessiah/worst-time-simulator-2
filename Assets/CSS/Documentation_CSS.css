@@ -14,12 +14,25 @@ div {
     display: flex;
 }
 
+.bot-left ul * li::selection,.bot-left ul > li::selection,
+.bot-left ul * ol::selection, .bot-left ul > ol::selection { background: transparent }
+.bot-left ul * li:hover,.bot-left ul > li:hover,
+.bot-left ul * ol:hover, .bot-left ul > ol:hover { color: rgb(33, 122, 255); }
+
 
 li {
-  font-size:2vw;
+  font-size:1.65vw;
   list-style-type: ">";
   padding-top: 2vh;
   padding-left: 1.5vw;
+}
+ol {
+  font-size:1.5vw;
+  padding-left: 0vw;
+  padding-right: 3vw;
+  padding-top: 1.5vh;
+  list-style-type: ">";
+  color:bisque;
 }
 
 .left {
