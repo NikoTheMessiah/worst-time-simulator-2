@@ -20,6 +20,10 @@ div {
 .bot-left ul * ol:hover, .bot-left ul > ol:hover { color: rgb(33, 122, 255); }
 
 
+ul {
+  padding-left: 5vw;
+}
+
 li {
   font-size:1.65vw;
   list-style-type: ">";
@@ -61,7 +65,19 @@ ol {
   justify-content: left;
 }
 
+h6 {
+  font-size: 0.8vw;
+}
 
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 0)
+}
+
+a:hover {
+    color: rgb(255, 187, 0);
+}
 
 .right {
   width: 75%;
@@ -93,6 +109,16 @@ ol {
   align-items: center;
   justify-content: center;
 }
+
+.center_div {
+  box-shadow: none;
+  width:98%;
+  height:95%;
+  font-size: 1.3vw;
+  flex-direction: column;
+  background-color: rgba(0,0,0,0);
+}
+
 
 
 #Title {

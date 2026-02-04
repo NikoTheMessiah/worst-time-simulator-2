@@ -19,10 +19,10 @@
             </div>
             <div class="bot-left">
                 <ul>
-                    <li>How to Setup WTS<audio src="Assets/Sounds/Select.mp3" id="beep"></audio></li>
+                    <li data-include="Setup.html" title-include="* Setting up Worst Time Simulator!">How to Setup WTS<audio src="Assets/Sounds/Select.mp3" id="beep"></audio></li>
                     <li id="menu_functions">Functions</li>
                     <ul class="menu_functions" style="display: none;">
-                        <ol data-include="Test.html">test <audio src="Assets/Sounds/Select.mp3" id="beep_"></audio></ol>
+                        <ol data-include="Test.html" title-include="* TEST PAGE THING">test <audio src="Assets/Sounds/Select.mp3" id="beep_"></audio></ol>
                         <ol>test</ol>
                         <ol>test</ol>
                     </ul>
@@ -39,7 +39,12 @@
                 <p id="Title">* Page Title Thing</p>
                 <img src="Assets/Misc/Site Title.png" alt="SITE TITLE">
             </div>
-            <div class="bottom">DIV 3</div>
+            <div class="bottom">
+                <div class="center_div">
+
+                </div>
+
+            </div>
         </div>
     </div>
 
@@ -51,9 +56,11 @@ $('#menu_functions').click(function() {
 $(function () {
   var includes = $('[data-include]')
   $.each(includes, function () {
+    var txt = this.getAttribute("title-include")
     var x =  "Docs/" + $(this).data('include')
     $(this).click(function() {
-        $(".bottom").load("/worst-time-simulator-2/"+x)
+        $(".center_div").load("/worst-time-simulator-2/"+x);
+        $('#Title').text(txt);
     });
     
 
