@@ -23,8 +23,8 @@
                     <li id="menu_functions">Functions</li>
                     <ul class="menu_functions" style="display: none;">
                         <ol data-include="Test.html" title-include="* TEST PAGE THING">test <audio src="Assets/Sounds/Select.mp3" id="beep_"></audio></ol>
-                        <ol>test</ol>
-                        <ol>test</ol>
+                        <ol>Combat Box</ol>
+                        <ol style="font-size: xx-small;">Howdy! I'm here temporarily to remind you of your car's extended warranty!</ol>
                     </ul>
                     <li>Exporting Attacks</li>
                 </ul>

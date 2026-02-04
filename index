@@ -17,7 +17,7 @@
         </div>
         <p>Welcome to the Worst Time Simulator 2's<br>Official Wiki/Manual!</p>
         <p class="MenuButtons" style="font-size:2.85vh; background-color: rgba(0,0,0,0.15);">&lt;|
-            <a href="MainPage.html">&lt;How to Setup?&gt;<audio src="Assets/Sounds/Select.mp3" id="beep"></audio></a> |
+            <a href="MainPage">&lt;How to Setup?&gt;<audio src="Assets/Sounds/Select.mp3" id="beep"></audio></a> |
         
             <a>&lt;Attack Functions&gt;</a> |&gt;
         </p>
