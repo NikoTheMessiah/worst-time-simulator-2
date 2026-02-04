@@ -51,7 +51,7 @@ $('#menu_functions').click(function() {
 $(function () {
   var includes = $('[data-include]')
   $.each(includes, function () {
-    var file = "/Docs/" + $(this).data('include');
+    var file = document.location.hostname + "Docs/" + $(this).data('include');
     console.log(file);
     $(".bottom").load(file);
 
