@@ -51,12 +51,10 @@ $('#menu_functions').click(function() {
 $(function () {
   var includes = $('[data-include]')
   $.each(includes, function () {
-    var file = document.location.hostname + "Docs/" + $(this).data('include');
-    console.log(file);
-    $(".bottom").load(file);
+    $(".bottom").load(document.location.host + "/Docs/" + $(this).data('include'))
 
   })
-})
+});
 
 $(".bot-left ul li").each(function(i) {
         if (i != 0) {
