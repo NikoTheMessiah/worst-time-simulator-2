@@ -1,3 +1,27 @@
+:root {
+    --Yellow: #DCDCAA;
+    --Green: #4EC9B0;
+    --LightGreen: #B5CEA8;
+    --Blue: #9CDCFE;
+    --SaturYellow: #FFD700;
+}
+
+.GY {
+  color: var(--Yellow);
+}
+.GG {
+  color: var(--Green);
+}
+.GLG {
+  color: var(--LightGreen);
+}
+.GB {
+  color: var(--Blue);
+}
+.GSY {
+  color: var(--SaturYellow);
+}
+
 div {
     background-color: rgba(0,0,0,0.2);
     box-shadow: inset 0 0 20px rgba(50, 50, 180,1);
@@ -19,6 +43,13 @@ div {
 .bot-left ul * li:hover,.bot-left ul > li:hover,
 .bot-left ul * ol:hover, .bot-left ul > ol:hover { color: rgb(33, 122, 255); }
 
+hr {
+  width: 99.9%; 
+  margin-top: 0.5vh; 
+  margin-bottom: 0.5vh; 
+  color:rgba(128,128,128,0.5);
+  background-color:rgba(128,128,128,0.5);
+}
 
 ul {
   padding-left: 5vw;
@@ -31,12 +62,13 @@ li {
   padding-left: 1.5vw;
 }
 ol {
-  font-size:1.5vw;
+  font-size:1.2vw;
   padding-left: 0vw;
   padding-right: 3vw;
   padding-top: 1.5vh;
   list-style-type: ">";
-  color:bisque;
+
+  color:rgb(214, 172, 120);
 }
 
 .left {
