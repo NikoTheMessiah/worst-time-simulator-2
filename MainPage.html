@@ -51,9 +51,9 @@ $('#menu_functions').click(function() {
 $(function () {
   var includes = $('[data-include]')
   $.each(includes, function () {
-    var x =  "worst-time-simulator-2/Docs/" + $(this).data('include')
-    console.log(x);
-    $(".bottom").load(x)
+    var x =  "Docs/" + $(this).data('include')
+
+    $(".bottom").load("/worst-time-simulator-2/"+x)
 
   })
 });
