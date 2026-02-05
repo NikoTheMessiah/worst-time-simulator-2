@@ -4,6 +4,7 @@
     --LightGreen: #B5CEA8;
     --Blue: #9CDCFE;
     --SaturYellow: #FFD700;
+    --DarkBlue: #579dd6;
 }
 
 .GY {
@@ -20,6 +21,9 @@
 }
 .GSY {
   color: var(--SaturYellow);
+}
+.GDB {
+  color: var(--DarkBlue);
 }
 
 div {
